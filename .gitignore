@@ -1,0 +1,17 @@
+# 依赖与构建产物
+node_modules/
+dist/
+
+# 本地临时文件
+.tmp/
+*.tmp
+*.log
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 渲染出来的临时图片（examples/ 下的 before.png / after.png 是提交进仓库的）
+render/

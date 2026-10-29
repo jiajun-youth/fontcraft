@@ -1,0 +1,43 @@
+{
+  "name": "fontcraft",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 排版插件：生成 Word / PPT / Excel 前选择标题、正文、数字、英文等各类文字的字体与字号，并自动套用到文档。",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib",
+    "engine",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node tests/host-plugin.test.mjs && node tests/client-bundle.test.mjs && node tests/engine-office.test.mjs",
+    "demo": "node scripts/make-demo-docx.mjs examples/demo-before.docx"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "docx",
+    "pptx",
+    "xlsx",
+    "typography",
+    "fonts",
+    "chinese"
+  ]
+}
